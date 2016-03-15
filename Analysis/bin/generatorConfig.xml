@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="C:\ll\workspace\Analysis\lib\mysql-jdbc.jar"/>
+  <context id="Analysis" targetRuntime="MyBatis3">
+  	<plugin type="org.mybatis.generator.plugins.MapperConfigPlugin">
+  		<property name="targetPackage" value="com.htsc.hub.db.model" ></property>
+  		<property name="targetProject"
+  			value="htsc_hub" /></plugin>
+  	<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+  		connectionURL="jdbc:mysql://192.168.203.60/stock_2016"
+  		userId="root" password="root" />
+  	<javaModelGenerator targetPackage="com.htsc.hub.db.model"
+  		targetProject="Analysis" />
+  	<sqlMapGenerator targetPackage="com.htsc.hub.db.map"
+  		targetProject="Analysis" />
+  		
+     <!--  <table tableName="stock_quotation"/>
+     <table tableName="stock_choose"/>
+     <table tableName="stock_shareholding"/>
+     <table tableName="stock_assets"/>
+     
+     <table tableName="stock_shareholding"/>
+     <table tableName="stock_assets"/>
+     <table tableName="stock_ops"/>
+     <table tableName="stock"/>
+     <table tableName="stock_date"/>
+     <table tableName="stock_week_day"/>
+     <table tableName="stock_week_quotation"/>-->
+     <table tableName="stock_quotation_q"/>
+     <table tableName="stock_week_quotation_q"/>
+  </context> 
+</generatorConfiguration>
